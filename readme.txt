@@ -19,7 +19,7 @@ So you can embed iframe code using this shortcode **`[iframe width="640" height=
 = Usage: =
 You can set various parameters:
 * width - width of the iframe in pixels `[iframe width="640" src="http://player.vimeo.com/video/22262152?title=0"]` (by default width="640");
-* height** - height of the iframe in pixels `[iframe height="480" src="http://player.vimeo.com/video/22262152?title=0"]` (by default height="480");
+* height - height of the iframe in pixels `[iframe height="480" src="http://player.vimeo.com/video/22262152?title=0"]` (by default height="480");
 * src - source of the iframe `[iframe src="http://player.vimeo.com/video/22262152?title=0"]` (by default src="");
 * frameborder - frameborder parameter of the iframe `[iframe frameborder="0" src="http://player.vimeo.com/video/22262152?title=0"]` (by default frameborder="0");
 * scrolling - scrolling parameter of the iframe `[iframe scrolling="no" src="http://player.vimeo.com/video/22262152?title=0"]` (by default scrolling="no");
