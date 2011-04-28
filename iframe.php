@@ -3,7 +3,7 @@
 /*
 Plugin Name: Iframe
 Plugin URI: http://web-profile.com.ua/wordpress/plugins/iframe/
-Description: Plugin shows iframe with [iframe width="640" height="480" src="http://player.vimeo.com/video/22262152?title=0"] shortcode.
+Description: Plugin shows iframe with [iframe width="640" height="480" src="http://player.vimeo.com/video/3261363"] shortcode.
 Version: 1.0.0
 Author: webvitaly
 Author Email: webvitaly(at)gmail.com
@@ -22,7 +22,8 @@ if ( !function_exists( 'iframe_embed_sortcode' ) ) {
 			'marginheight' => '0',
 			'marginwidth' => '0'
 		), $atts));
-		return '<iframe width="'.$width.'" height="'.$height.'" frameborder="'.$frameborder.'" scrolling="'.$scrolling.'" marginheight="'.$marginheight.'" marginwidth="'.$marginwidth.'" src="'.$src.'&amp;output=embed" ></iframe>';
+		return '<iframe width="'.$width.'" height="'.$height.'" frameborder="'.$frameborder.'" scrolling="'.$scrolling.'" marginheight="'.$marginheight.'" marginwidth="'.$marginwidth.'" src="'.$src.'" ></iframe>';
+		// &amp;output=embed
 	}
 	add_shortcode('iframe', 'iframe_embed_sortcode');
 }
