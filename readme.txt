@@ -40,5 +40,4 @@ So you can embed iframe code using this shortcode **`[iframe width="640" height=
 == Installation ==
 
 1. Install plugin and activate it on the Plugins page;
-2. Add shortcode **`[iframe width="640" height="480" src="http://player.vimeo.com/video/3261363"]`** to page content;
-
+2. Add shortcode `[iframe width="640" height="480" src="http://player.vimeo.com/video/3261363"]` to page content;
