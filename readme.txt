@@ -32,7 +32,7 @@ So you can embed iframe code using this shortcode **`[iframe width="640" height=
 == Changelog ==
 
 = 1.1.0 =
-* Parameter allowtransparency added (thanks to kent);
+* Parameter allowtransparency added (thanks to Kent);
 
 = 1.0.0 =
 * Initial release;
