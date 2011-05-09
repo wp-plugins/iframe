@@ -8,13 +8,13 @@ Requires at least: 3.0
 Tested up to: 3.1.2
 Stable tag: 1.1.0
 
-You may embed iframe with [iframe width="640" height="480" src="http://vimeo.com/123"] shortcode.
+You can embed iframe with [iframe width="640" height="480" src="http://vimeo.com/123"] shortcode.
 
 == Description ==
 
 Iframes are needed to embed video from youtube or to embed Google Map or just to embed content from external page.
 WordPress removes iframe when you switch from "HTML" to "Visual" tab because of the security reasons.
-So you can embed iframe code using this shortcode **`[iframe width="640" height="480" src="http://player.vimeo.com/video/3261363"]`**.
+So you can embed iframe code using this shortcode `[iframe width="640" height="480" src="http://player.vimeo.com/video/3261363"]`.
 
 = Usage =
 * You can set various parameters:
