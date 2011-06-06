@@ -1,11 +1,10 @@
 === Iframe ===
 Contributors: webvitaly
-Donate link: http://web-profile.com.ua/wordpress/plugins/iframe/
 Plugin URI: http://web-profile.com.ua/wordpress/plugins/iframe/
 Tags: iframe, embed
 Author URI: http://web-profile.com.ua/wordpress/
 Requires at least: 3.0
-Tested up to: 3.1.2
+Tested up to: 3.2
 Stable tag: 1.1.0
 
 You can embed iframe with [iframe width="640" height="480" src="http://vimeo.com/123"] shortcode.
@@ -25,6 +24,8 @@ So you can embed iframe code using this shortcode `[iframe width="640" height="4
 * marginheight - marginheight parameter of the iframe `[iframe marginheight="0" src="http://player.vimeo.com/video/3261363"]` (by default marginheight="0");
 * marginwidth - marginwidth parameter of the iframe `[iframe marginwidth="0" src="http://player.vimeo.com/video/3261363"]` (by default marginwidth="0");
 * allowtransparency - allowing transparency of the iframe `[iframe allowtransparency="true" src="http://player.vimeo.com/video/3261363"]` (by default allowtransparency="true");
+
+[Iframe plugin page](http://web-profile.com.ua/wordpress/plugins/iframe/)
 
 [WordPress stuff](http://web-profile.com.ua/wordpress/)
 
