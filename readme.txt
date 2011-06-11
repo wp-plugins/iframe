@@ -5,7 +5,7 @@ Tags: iframe, embed
 Author URI: http://web-profile.com.ua/wordpress/
 Requires at least: 3.0
 Tested up to: 3.2
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 
 You can embed iframe with [iframe width="640" height="480" src="http://vimeo.com/123"] shortcode.
 
@@ -30,6 +30,9 @@ So you can embed iframe code using this shortcode `[iframe width="640" height="4
 [WordPress stuff](http://web-profile.com.ua/wordpress/)
 
 == Changelog ==
+
+= 1.2.0 =
+* Adding "output=embed" to Google Map;
 
 = 1.1.0 =
 * Parameter allowtransparency added (thanks to Kent);
