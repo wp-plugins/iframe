@@ -23,10 +23,10 @@ So you can embed iframe code using this shortcode `[iframe width="640" height="4
 * scrolling - scrolling parameter of the iframe `[iframe scrolling="no" src="http://player.vimeo.com/video/3261363"]` (by default scrolling="no");
 * marginheight - marginheight parameter of the iframe `[iframe marginheight="0" src="http://player.vimeo.com/video/3261363"]` (by default marginheight="0");
 * marginwidth - marginwidth parameter of the iframe `[iframe marginwidth="0" src="http://player.vimeo.com/video/3261363"]` (by default marginwidth="0");
-* allowtransparency - allowing transparency of the iframe `[iframe allowtransparency="true" src="http://player.vimeo.com/video/3261363"]` (by default allowtransparency="true");
-* id - allowing to add the id of the iframe `[iframe id="my-id" src="http://player.vimeo.com/video/3261363"]` (by default id="");
+* allowtransparency - allows to set transparency of the iframe `[iframe allowtransparency="true" src="http://player.vimeo.com/video/3261363"]` (by default allowtransparency="true");
+* id - allows to add the id of the iframe `[iframe id="my-id" src="http://player.vimeo.com/video/3261363"]` (by default id="");
 * class - allowing to add the class of the iframe `[iframe class="my-class" src="http://player.vimeo.com/video/3261363"]` (by default class="iframe-class");
-* same_height_as - allowing to set the height of iframe same as target element `[iframe same_height_as="body" src="http://player.vimeo.com/video/3261363"]` or `[iframe same_height_as="div.sidebar"]` or `[iframe same_height_as="div#content"]` (by default same_height_as="");
+* same_height_as - allows to set the height of iframe same as target element `[iframe same_height_as="body" src="http://player.vimeo.com/video/3261363"]` or `[iframe same_height_as="div.sidebar"]` or `[iframe same_height_as="div#content"]` (by default same_height_as="");
 
 [Iframe plugin page](http://web-profile.com.ua/wordpress/plugins/iframe/)
 
