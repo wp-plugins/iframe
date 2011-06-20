@@ -1,7 +1,7 @@
 === Iframe ===
 Contributors: webvitaly
 Plugin URI: http://web-profile.com.ua/wordpress/plugins/iframe/
-Tags: iframe, embed, youtube, vimeo, google-map
+Tags: iframe, embed, youtube, vimeo, google-map, google-maps
 Author URI: http://web-profile.com.ua/wordpress/
 Requires at least: 3.0
 Tested up to: 3.2
