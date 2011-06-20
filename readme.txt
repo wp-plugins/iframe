@@ -7,16 +7,16 @@ Requires at least: 3.0
 Tested up to: 3.2
 Stable tag: 1.4.0
 
-You can embed iframe with [iframe width="640" height="480" src="http://vimeo.com/123"] shortcode.
+You can embed iframe with [iframe width="100%" height="480" src="http://vimeo.com/123"] shortcode.
 
 == Description ==
 
 Iframes are needed to embed video from youtube or to embed Google Map or just to embed content from external page.
 WordPress removes iframe when you switch from "HTML" to "Visual" tab because of the security reasons.
-So you can embed iframe code using this shortcode `[iframe width="640" height="480" src="http://player.vimeo.com/video/3261363"]`.
+So you can embed iframe code using this shortcode `[iframe width="100%" height="480" src="http://player.vimeo.com/video/3261363"]`.
 
 = Usage (allowed parameters) =
-* width - width of the iframe in pixels `[iframe width="640" src="http://player.vimeo.com/video/3261363"]` or `[iframe width="50%" src="http://player.vimeo.com/video/3261363"]` (by default width="100%");
+* width - width of the iframe in pixels `[iframe width="100%" src="http://player.vimeo.com/video/3261363"]` or `[iframe width="640" src="http://player.vimeo.com/video/3261363"]` (by default width="100%");
 * height - height of the iframe in pixels `[iframe height="480" src="http://player.vimeo.com/video/3261363"]` (by default height="480");
 * src - source of the iframe `[iframe src="http://player.vimeo.com/video/3261363"]` (by default src="");
 * frameborder - frameborder parameter of the iframe `[iframe frameborder="0" src="http://player.vimeo.com/video/3261363"]` (by default frameborder="0");
@@ -52,4 +52,4 @@ So you can embed iframe code using this shortcode `[iframe width="640" height="4
 == Installation ==
 
 1. Install plugin and activate it on the Plugins page;
-2. Add shortcode `[iframe width="640" height="480" src="http://player.vimeo.com/video/3261363"]` to page content;
+2. Add shortcode `[iframe width="100%" height="480" src="http://player.vimeo.com/video/3261363"]` to page content;
