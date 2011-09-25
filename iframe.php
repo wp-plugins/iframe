@@ -39,10 +39,15 @@ if ( !function_exists( 'iframe_embed_shortcode' ) ) :
 		$return = '';
 		if( $same_height_as != '' ){
 			if( $same_height_as != 'content' ){ // we are setting the height of the iframe like as target element
+				if( $same_height_as == 'document' || $same_height_as == 'window' ){ // remove quotes for window or document selectors
+					$target_selector = $same_height_as;
+				}else{
+					$target_selector = '"'.$same_height_as.'"';
+				}
 				$return .= '
 					<script>
 					jQuery(document).ready(function($) {
-						var target_height = $("'.$same_height_as.'").height();
+						var target_height = $('.$target_selector.').height();
 						$("iframe.'.$class.'").height(target_height);
 					});
 					</script>
