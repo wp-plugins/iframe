@@ -5,7 +5,7 @@ Tags: iframe, embed, youtube, vimeo, google-map, google-maps
 Author URI: http://web-profile.com.ua/wordpress/
 Requires at least: 3.0
 Tested up to: 3.3
-Stable tag: 1.6.0
+Stable tag: 1.7
 
 You can embed iframe with [iframe src="http://vimeo.com/123" width="100%" height="480"] shortcode.
 
@@ -33,6 +33,9 @@ So you can embed iframe code using this shortcode `[iframe src="http://player.vi
 [CMS WordPress](http://web-profile.com.ua/wordpress/)
 
 == Changelog ==
+
+= 1.7 =
+* Fixing minor bugs;
 
 = 1.6.0 =
 * Adding auto-height feature (thanks to Willem Veelenturf);
