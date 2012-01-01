@@ -23,7 +23,7 @@ So you can embed iframe code using this shortcode `[iframe src="http://player.vi
 * **frameborder** - parameter `[iframe frameborder="0"]` (removed by default);
 * **marginheight** - parameter `[iframe marginheight="0"]` (removed by default);
 * **marginwidth** - parameter `[iframe marginwidth="0"]` (removed by default);
-* **allowtransparency** - allows to set transparency of the iframe `[iframe allowtransparency="true"]` (by default allowtransparency="true");
+* **allowtransparency** - allows to set transparency of the iframe `[iframe allowtransparency="true"]` (removed by default);
 * **id** - allows to add the id of the iframe `[iframe id="my-id"]` (removed by default);
 * **class** - allows to add the class of the iframe `[iframe class="my-class"]` (by default class="iframe-class");
 * **style** - allows to add the css styles of the iframe `[iframe style="margin-left:-30px;"]` (removed by default);
