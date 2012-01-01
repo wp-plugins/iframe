@@ -76,7 +76,7 @@ if ( !function_exists( 'iframe_embed_shortcode' ) ) :
 		}else{
 			$style_text = '';
 		}
-		$return .= "\n".'<!-- powered by Iframe plugin ver. 1.7 (wordpress.org/extend/plugins/iframe/) -->'."\n";
+		$return .= "\n".'<!-- powered by Iframe plugin ver. 1.8 (wordpress.org/extend/plugins/iframe/) -->'."\n";
 		$return .= '<iframe '.$id_text.'class="'.$class.'" '.$style_text.'width="'.$width.'" height="'.$height.'" src="'.$src.$google_map_fix.'" frameborder="'.$frameborder.'" scrolling="'.$scrolling.'" marginheight="'.$marginheight.'" marginwidth="'.$marginwidth.'" allowtransparency="'.$allowtransparency.'"></iframe>';
 		// &amp;output=embed
 		return $return;
