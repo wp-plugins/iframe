@@ -3,7 +3,7 @@
 Plugin Name: iframe
 Plugin URI: http://web-profile.com.ua/wordpress/plugins/iframe/
 Description: Plugin shows iframe with [iframe src="http://player.vimeo.com/video/3261363" width="100%" height="480"] shortcode.
-Version: 2.0
+Version: 2.1
 Author: webvitaly
 Author Email: webvitaly(at)gmail.com
 Author URI: http://web-profile.com.ua/wordpress/
@@ -21,7 +21,8 @@ if ( !function_exists( 'iframe_embed_shortcode' ) ) :
 			'width' => '100%',
 			'height' => '480',
 			'scrolling' => 'no',
-			'class' => 'iframe-class'
+			'class' => 'iframe-class',
+			'frameborder' => '0'
 		);
 		// add defaults
 		foreach ($defaults as $default => $value) {
@@ -66,7 +67,7 @@ if ( !function_exists( 'iframe_embed_shortcode' ) ) :
 				';
 			}
 		}
-        $html .= "\n".'<!-- powered by Iframe plugin ver.2.0 (wordpress.org/extend/plugins/iframe/) -->'."\n";
+        $html .= "\n".'<!-- powered by Iframe plugin ver.2.1 (wordpress.org/extend/plugins/iframe/) -->'."\n";
 		$html .= '<iframe';
         foreach ($atts as $attr => $value) {
 			if( $attr != 'same_height_as' ){ // remove some attributes

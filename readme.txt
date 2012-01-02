@@ -5,7 +5,7 @@ Tags: iframe, embed, youtube, vimeo, google-map, google-maps
 Author URI: http://web-profile.com.ua/wordpress/
 Requires at least: 3.0
 Tested up to: 3.3
-Stable tag: 2.0
+Stable tag: 2.1
 
 You can embed iframe with [iframe src="http://vimeo.com/123" width="100%" height="480"] shortcode.
 
@@ -20,7 +20,7 @@ So you can embed iframe code using this shortcode `[iframe src="http://player.vi
 * **width** - width in pixels or in percents `[iframe width="100%" src="http://player.vimeo.com/video/3261363"]` or `[iframe width="640" src="http://player.vimeo.com/video/3261363"]` (by default width="100%");
 * **height** - height in pixels `[iframe height="480" src="http://player.vimeo.com/video/3261363"]` (by default height="480");
 * **scrolling** - parameter `[iframe scrolling="yes"]` (by default scrolling="no");
-* **frameborder** - parameter `[iframe frameborder="0"]` (removed by default);
+* **frameborder** - parameter `[iframe frameborder="0"]` (by default frameborder="0");
 * **marginheight** - parameter `[iframe marginheight="0"]` (removed by default);
 * **marginwidth** - parameter `[iframe marginwidth="0"]` (removed by default);
 * **allowtransparency** - allows to set transparency of the iframe `[iframe allowtransparency="true"]` (removed by default);
@@ -36,6 +36,9 @@ So you can embed iframe code using this shortcode `[iframe src="http://player.vi
 [CMS WordPress](http://web-profile.com.ua/wordpress/)
 
 == Changelog ==
+
+= 2.1 =
+* added (frameborder="0") by default;
 
 = 2.0 =
 * plugin core rebuild (thanks to Gregg Tavares);
