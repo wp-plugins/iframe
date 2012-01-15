@@ -67,7 +67,7 @@ if ( !function_exists( 'iframe_embed_shortcode' ) ) :
 				';
 			}
 		}
-        $html .= "\n".'<!-- powered by Iframe plugin ver.2.1 (wordpress.org/extend/plugins/iframe/) -->'."\n";
+        $html .= "\n".'<!-- Iframe plugin v.2.1 (wordpress.org/extend/plugins/iframe/) -->'."\n";
 		$html .= '<iframe';
         foreach ($atts as $attr => $value) {
 			if( $attr != 'same_height_as' ){ // remove some attributes

@@ -76,5 +76,5 @@ So you can embed iframe code using this shortcode `[iframe src="http://player.vi
 
 == Installation ==
 
-1. Install plugin and activate it on the Plugins page;
+1. Install and activate the plugin on the Plugins page;
 2. Add shortcode `[iframe src="http://player.vimeo.com/video/3261363" width="100%" height="480"]` to page content;
