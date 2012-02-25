@@ -7,7 +7,7 @@ Requires at least: 3.0
 Tested up to: 3.3.1
 Stable tag: 2.2
 
-Embed iframe with [iframe src="http://vimeo.com/123" width="100%" height="480"] shortcode.
+[iframe src="http://player.vimeo.com/video/3261363" width="100%" height="480"] shortcode
 
 == Description ==
 
