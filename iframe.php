@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: iframe
+Plugin Name: Iframe
 Plugin URI: http://web-profile.com.ua/wordpress/plugins/iframe/
-Description: [iframe src="http://player.vimeo.com/video/3261363" width="100%" height="480"] shortcode helps you to embed iframe
+Description: [iframe src="http://player.vimeo.com/video/3261363" width="100%" height="480"] shortcode
 Version: 2.2
 Author: webvitaly
 Author Email: webvitaly(at)gmail.com

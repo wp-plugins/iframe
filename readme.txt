@@ -12,8 +12,17 @@ Stable tag: 2.2
 == Description ==
 
 Iframes are needed to embed video from youtube or to embed Google Map or just to embed content from external page.
-WordPress removes iframe when you switch from "HTML" to "Visual" tab because of the security reasons.
-So you can embed iframe code using this shortcode `[iframe src="http://player.vimeo.com/video/3261363" width="100%" height="480"]`.
+Embed iframe using shortcode `[iframe src="http://player.vimeo.com/video/3261363" width="100%" height="480"]`.
+[All Iframe params](http://wordpress.org/extend/plugins/page-list/other_notes/).
+
+[Iframe plugin page](http://web-profile.com.ua/wordpress/plugins/iframe/)
+
+= Try other useful plugins: =
+* [Page-list](http://wordpress.org/extend/plugins/page-list/) - show list of pages with shortcodes
+* [Login Logout](http://wordpress.org/extend/plugins/login-logout/) - default Meta widget replacement
+* [Filenames to latin](http://wordpress.org/extend/plugins/filenames-to-latin/) - sanitize filenames to latin during upload
+
+== Other Notes ==
 
 = Usage (allowed parameters) =
 * **src** - source of the iframe `[iframe src="http://player.vimeo.com/video/3261363"]` (empty by default src="");
@@ -30,10 +39,6 @@ So you can embed iframe code using this shortcode `[iframe src="http://player.vi
 * **same_height_as** - allows to set the height of iframe same as target element `[iframe same_height_as="body"]`, `[iframe same_height_as="div.sidebar"]`, `[iframe same_height_as="div#content"]`, `[iframe same_height_as="window"]` - iframe will have the height of the viewport (visible area), `[iframe same_height_as="document"]` - iframe will have the height of the document, `[iframe same_height_as="content"]` - auto-height feature, so the height of the iframe will be the same as embedded content. [same_height_as="content"] works only with the same domain and subdomain. Will not work if you want to embed page "sub.site.com" on page "site.com". (removed by default);
 * **any_other_param** - allows to add new parameter of the iframe `[iframe any_other_param="any_value"]`;
 * **any_other_empty_param** - allows to add new empty parameter of the iframe (like "allowfullscreen" on youtube) `[iframe any_other_empty_param=""]`;
-
-[Iframe plugin page](http://web-profile.com.ua/wordpress/plugins/iframe/)
-
-[CMS WordPress](http://web-profile.com.ua/wordpress/)
 
 == Changelog ==
 
