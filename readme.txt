@@ -13,9 +13,9 @@ Stable tag: 2.2
 
 Iframes are needed to embed video from youtube or to embed Google Map or just to embed content from external page.
 
-Embed iframe using shortcode `[iframe src="http://player.vimeo.com/video/3261363" width="100%" height="480"]`.
+Embed iframe using shortcode `[iframe src="http://player.vimeo.com/video/3261363" width="100%" height="480"]`
 
-[All Iframe params](http://wordpress.org/extend/plugins/iframe/other_notes/).
+[All Iframe params](http://wordpress.org/extend/plugins/iframe/other_notes/)
 
 [Iframe plugin page](http://web-profile.com.ua/wordpress/plugins/iframe/)
 
