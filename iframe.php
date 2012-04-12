@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Iframe
+Plugin Name: [iframe]
 Plugin URI: http://web-profile.com.ua/wordpress/plugins/iframe/
 Description: [iframe src="http://player.vimeo.com/video/3261363" width="100%" height="480"] shortcode
 Version: 2.2
