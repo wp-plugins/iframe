@@ -1,4 +1,4 @@
-=== Iframe ===
+=== [iframe] ===
 Contributors: webvitaly
 Plugin URI: http://web-profile.com.ua/wordpress/plugins/iframe/
 Tags: iframe, embed, youtube, vimeo, google-map, google-maps
