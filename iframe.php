@@ -1,13 +1,14 @@
 <?php
 /*
 Plugin Name: iframe
-Plugin URI: http://web-profile.com.ua/wordpress/plugins/iframe/
+Plugin URI: http://wordpress.org/extend/plugins/iframe/
 Description: [iframe src="http://player.vimeo.com/video/819138" width="100%" height="480"] shortcode
-Version: 2.3
+Version: 2.4
 Author: webvitaly
-Author URI: http://web-profile.com.ua/wordpress/
+Author URI: http://profiles.wordpress.org/webvitaly/
 License: GPLv2 or later
 */
+
 
 if ( !function_exists( 'iframe_embed_shortcode' ) ) :
 
@@ -73,7 +74,7 @@ if ( !function_exists( 'iframe_embed_shortcode' ) ) :
 				';
 			}
 		}
-        $html .= "\n".'<!-- iframe plugin v:2.3 - wordpress.org/extend/plugins/iframe/ -->'."\n";
+        $html .= "\n".'<!-- iframe plugin v.2.4 wordpress.org/extend/plugins/iframe/ -->'."\n";
 		$html .= '<iframe';
         foreach ($atts as $attr => $value) {
 			if( $attr != 'same_height_as' ){ // remove some attributes
@@ -90,3 +91,13 @@ if ( !function_exists( 'iframe_embed_shortcode' ) ) :
 	add_shortcode('iframe', 'iframe_embed_shortcode');
 	
 endif;
+
+
+function iframe_unqprfx_plugin_meta( $links, $file ) { // add 'Support' and 'Donate' links to plugin meta row
+	if ( strpos( $file, 'iframe.php' ) !== false ) {
+		$links = array_merge( $links, array( '<a href="http://web-profile.com.ua/wordpress/plugins/iframe/" title="Need help?">' . __('Support') . '</a>' ) );
+		$links = array_merge( $links, array( '<a href="http://web-profile.com.ua/donate/" title="Support the development">' . __('Donate') . '</a>' ) );
+	}
+	return $links;
+}
+add_filter( 'plugin_row_meta', 'iframe_unqprfx_plugin_meta', 10, 2 );

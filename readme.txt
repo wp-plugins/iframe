@@ -3,8 +3,8 @@ Contributors: webvitaly
 Donate link: http://web-profile.com.ua/donate/
 Tags: iframe, embed, youtube, vimeo, google-map, google-maps
 Requires at least: 3.0
-Tested up to: 3.4.2
-Stable tag: 2.3
+Tested up to: 3.5
+Stable tag: 2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,14 +16,13 @@ Use iframe to embed video from YouTube or Vimeo or to embed Google Map or just t
 
 Embed iframe using shortcode `[iframe src="http://player.vimeo.com/video/819138" width="100%" height="480"]`
 
-[All iframe params](http://wordpress.org/extend/plugins/iframe/other_notes/)
+**[All iframe params](http://wordpress.org/extend/plugins/iframe/other_notes/)**
 
-[iframe plugin page](http://web-profile.com.ua/wordpress/plugins/iframe/)
+[iframe support page](http://web-profile.com.ua/wordpress/plugins/iframe/)
 
 = Useful plugins: =
 * ["Page-list" - show list of pages with shortcodes](http://wordpress.org/extend/plugins/page-list/ "list of pages with shortcodes")
 * ["Anti-spam" - block spam in comments](http://wordpress.org/extend/plugins/anti-spam/ "no spam, no captcha")
-* ["Login-Logout" - default Meta widget replacement](http://wordpress.org/extend/plugins/login-logout/ "default Meta widget replacement")
 * ["Filenames to latin" - sanitize filenames to latin during upload](http://wordpress.org/extend/plugins/filenames-to-latin/ "sanitize filenames to latin")
 
 == Other Notes ==
@@ -49,6 +48,9 @@ Embed iframe using shortcode `[iframe src="http://player.vimeo.com/video/819138"
 1. [iframe] shortcode
 
 == Changelog ==
+
+= 2.4 - 2012-10-31 =
+* minor changes
 
 = 2.3 - 2012.09.09 =
 * small fixes
