@@ -3,21 +3,21 @@
 Plugin Name: iframe
 Plugin URI: http://wordpress.org/extend/plugins/iframe/
 Description: [iframe src="http://player.vimeo.com/video/819138" width="100%" height="480"] shortcode
-Version: 2.4
+Version: 2.5
 Author: webvitaly
 Author URI: http://profiles.wordpress.org/webvitaly/
 License: GPLv2 or later
 */
 
 
-if ( !function_exists( 'iframe_embed_shortcode' ) ) :
+if ( !function_exists( 'iframe_unqprfx_embed_shortcode' ) ) :
 
-	function iframe_enqueue_script() {
+	function iframe_unqprfx_enqueue_script() {
 		wp_enqueue_script( 'jquery' );
 	}
-	add_action('wp_enqueue_scripts', 'iframe_enqueue_script');
+	add_action('wp_enqueue_scripts', 'iframe_unqprfx_enqueue_script');
 	
-	function iframe_embed_shortcode($atts, $content = null) {
+	function iframe_unqprfx_embed_shortcode($atts, $content = null) {
 		$defaults = array(
 			'src' => 'http://player.vimeo.com/video/819138',
 			'width' => '100%',
@@ -33,10 +33,26 @@ if ( !function_exists( 'iframe_embed_shortcode' ) ) :
 			}
 		}
 
-		$src_cut = substr($atts["src"], 0, 35); // special case maps
-		if(strpos($src_cut, 'maps.google' )){
+		$src_cut = substr( $atts["src"], 0, 35 ); // special case for google maps
+		if( strpos( $src_cut, 'maps.google' ) ){
 			$atts["src"] .= '&output=embed';
 		}
+
+		// get_params_from_url
+		if( isset( $atts["get_params_from_url"] ) && ( $atts["get_params_from_url"] == '1' || $atts["get_params_from_url"] == 1 || $atts["get_params_from_url"] == 'true' ) ) {
+			if( $_GET != NULL ){
+				if( strpos( $atts["src"], '?' ) ){ // if we already have '?' and GET params
+					$encode_string = '&';
+				}else{
+					$encode_string = '?';
+				}
+				foreach( $_GET as $key => $value ){
+					$encode_string .= $key.'='.$value.'&';
+				}
+			}
+			$atts["src"] .= $encode_string;
+		}
+
 		$html = '';
 		if( isset( $atts["same_height_as"] ) ){
 			$same_height_as = $atts["same_height_as"];
@@ -54,7 +70,7 @@ if ( !function_exists( 'iframe_embed_shortcode' ) ) :
 				}
 				$html .= '
 					<script>
-					jQuery(document).ready(function($) {
+					jQuery(function($){
 						var target_height = $(' . $target_selector . ').height();
 						$("iframe.' . $atts["class"] . '").height(target_height);
 						//alert(target_height);
@@ -64,7 +80,7 @@ if ( !function_exists( 'iframe_embed_shortcode' ) ) :
 			}else{ // set the actual height of the iframe (show all content of the iframe without scroll)
 				$html .= '
 					<script>
-					jQuery(document).ready(function($) {
+					jQuery(function($){
 						$("iframe.' . $atts["class"] . '").bind("load", function() {
 							var embed_height = $(this).contents().find("body").height();
 							$(this).height(embed_height);
@@ -74,7 +90,7 @@ if ( !function_exists( 'iframe_embed_shortcode' ) ) :
 				';
 			}
 		}
-        $html .= "\n".'<!-- iframe plugin v.2.4 wordpress.org/extend/plugins/iframe/ -->'."\n";
+        $html .= "\n".'<!-- iframe plugin v.2.5 wordpress.org/extend/plugins/iframe/ -->'."\n";
 		$html .= '<iframe';
         foreach ($atts as $attr => $value) {
 			if( $attr != 'same_height_as' ){ // remove some attributes
@@ -88,7 +104,7 @@ if ( !function_exists( 'iframe_embed_shortcode' ) ) :
 		$html .= '></iframe>';
 		return $html;
 	}
-	add_shortcode('iframe', 'iframe_embed_shortcode');
+	add_shortcode('iframe', 'iframe_unqprfx_embed_shortcode');
 	
 endif;
 

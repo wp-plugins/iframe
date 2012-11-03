@@ -4,7 +4,7 @@ Donate link: http://web-profile.com.ua/donate/
 Tags: iframe, embed, youtube, vimeo, google-map, google-maps
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 2.4
+Stable tag: 2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,7 @@ Embed iframe using shortcode `[iframe src="http://player.vimeo.com/video/819138"
 * **class** - allows to add the class of the iframe `[iframe class="my-class"]` (by default class="iframe-class");
 * **style** - allows to add the css styles of the iframe `[iframe style="margin-left:-30px;"]` (removed by default);
 * **same_height_as** - allows to set the height of iframe same as target element `[iframe same_height_as="body"]`, `[iframe same_height_as="div.sidebar"]`, `[iframe same_height_as="div#content"]`, `[iframe same_height_as="window"]` - iframe will have the height of the viewport (visible area), `[iframe same_height_as="document"]` - iframe will have the height of the document, `[iframe same_height_as="content"]` - auto-height feature, so the height of the iframe will be the same as embedded content. [same_height_as="content"] works only with the same domain and subdomain. Will not work if you want to embed page "sub.site.com" on page "site.com". (removed by default);
+* **get_params_from_url** - allows to add GET params from url to the src of iframe; Example: page url - `site.com/?prm1=11`, shortcode - `[iframe src="embed.com" get_params_from_url="1"]`, iframe src - `embed.com?prm1=11` (disabled by default);
 * **any_other_param** - allows to add new parameter of the iframe `[iframe any_other_param="any_value"]`;
 * **any_other_empty_param** - allows to add new empty parameter of the iframe (like "allowfullscreen" on youtube) `[iframe any_other_empty_param=""]`;
 
@@ -48,6 +49,9 @@ Embed iframe using shortcode `[iframe src="http://player.vimeo.com/video/819138"
 1. [iframe] shortcode
 
 == Changelog ==
+
+= 2.5 - 2012-11-03 =
+* added 'get_params_from_url' (thanks to Nathanael Majoros)
 
 = 2.4 - 2012-10-31 =
 * minor changes
