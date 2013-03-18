@@ -50,6 +50,9 @@ Embed iframe using shortcode `[iframe src="http://www.youtube.com/embed/A3PDXmYo
 
 == Changelog ==
 
+= 2.6 - 2013-03-18 =
+* minor changes
+
 = 2.5 - 2012-11-03 =
 * added 'get_params_from_url' (thanks to Nathanael Majoros)
 
