@@ -20,6 +20,9 @@ Use iframe to embed video from YouTube or Vimeo or to embed Google Map or just t
 
 Embed iframe using shortcode `[iframe src="http://www.youtube.com/embed/A3PDXmYoF5U" width="100%" height="480"]`
 
+You also can use this shortcode to embed content via simple link: `[embed]http://www.youtube.com/watch?v=A3PDXmYoF5U[/embed]`
+[embed] shortcode is a WordPress core feature and based on [oEmbed](http://codex.wordpress.org/Embeds).
+
 = Useful plugins: =
 * ["Anti-spam" - block spam in comments](http://wordpress.org/extend/plugins/anti-spam/ "no spam, no captcha")
 * ["Page-list" - show list of pages with shortcodes](http://wordpress.org/extend/plugins/page-list/ "list of pages with shortcodes")
