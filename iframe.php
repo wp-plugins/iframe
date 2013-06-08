@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: iframe
-Plugin URI: http://wordpress.org/extend/plugins/iframe/
+Plugin URI: http://wordpress.org/plugins/iframe/
 Description: [iframe src="http://www.youtube.com/embed/A3PDXmYoF5U" width="100%" height="480"] shortcode
-Version: 2.6
+Version: 2.7
 Author: webvitaly
 Author URI: http://web-profile.com.ua/wordpress/plugins/
 License: GPLv2 or later
@@ -24,7 +24,8 @@ if ( ! function_exists( 'iframe_unqprfx_embed_shortcode' ) ) :
 			'height' => '480',
 			'scrolling' => 'no',
 			'class' => 'iframe-class',
-			'frameborder' => '0'
+			'frameborder' => '0',
+			'allowfullscreen' => ''
 		);
 
 		foreach ( $defaults as $default => $value ) { // add defaults
@@ -90,7 +91,7 @@ if ( ! function_exists( 'iframe_unqprfx_embed_shortcode' ) ) :
 				';
 			}
 		}
-        $html .= "\n".'<!-- iframe plugin v.2.6 wordpress.org/extend/plugins/iframe/ -->'."\n";
+        $html .= "\n".'<!-- iframe plugin v.2.7 wordpress.org/plugins/iframe/ -->'."\n";
 		$html .= '<iframe';
         foreach( $atts as $attr => $value ) {
 			if( $attr != 'same_height_as' ){ // remove some attributes
