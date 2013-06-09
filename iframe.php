@@ -24,8 +24,7 @@ if ( ! function_exists( 'iframe_unqprfx_embed_shortcode' ) ) :
 			'height' => '480',
 			'scrolling' => 'no',
 			'class' => 'iframe-class',
-			'frameborder' => '0',
-			'allowfullscreen' => ''
+			'frameborder' => '0'
 		);
 
 		foreach ( $defaults as $default => $value ) { // add defaults
