@@ -12,6 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 
 == Description ==
 
+**[Advanced iFrame Pro](http://codecanyon.net/item/advanced-iframe-pro/5344999?ref=webvitaly)**
 **[iframe](http://web-profile.com.ua/wordpress/plugins/iframe/ "Plugin page")** |
 **[All iframe params](http://wordpress.org/plugins/iframe/other_notes/)** |
 **[Donate](http://web-profile.com.ua/donate/ "Support the development")**
