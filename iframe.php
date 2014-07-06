@@ -108,6 +108,7 @@ if ( ! function_exists( 'iframe_unqprfx_embed_shortcode' ) ) :
 		if ( strpos( $file, 'iframe.php' ) !== false ) {
 			$links = array_merge( $links, array( '<a href="http://web-profile.com.ua/wordpress/plugins/iframe/" title="Plugin page">Iframe</a>' ) );
 			$links = array_merge( $links, array( '<a href="http://web-profile.com.ua/donate/" title="Support the development">Donate</a>' ) );
+			$links = array_merge( $links, array( '<a href="http://codecanyon.net/item/advanced-iframe-pro/5344999?ref=webvitaly">Advanced iFrame Pro</a>' ) );
 		}
 		return $links;
 	}
