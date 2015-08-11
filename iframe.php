@@ -3,7 +3,7 @@
 Plugin Name: iframe
 Plugin URI: http://wordpress.org/plugins/iframe/
 Description: [iframe src="http://www.youtube.com/embed/4qsGTXLnmKs" width="100%" height="500"] shortcode
-Version: 4.0
+Version: 4.1
 Author: webvitaly
 Author URI: http://web-profile.com.ua/wordpress/plugins/
 License: GPLv3
@@ -26,10 +26,11 @@ function iframe_unqprfx_embed_shortcode( $atts ) {
 		}
 	}
 
-	$html = "\n".'<!-- iframe plugin v.4.0 wordpress.org/plugins/iframe/ -->'."\n";
+	$html = "\n".'<!-- iframe plugin v.4.1 wordpress.org/plugins/iframe/ -->'."\n";
 	$html .= '<iframe';
 	foreach( $atts as $attr => $value ) {
-		if ( strtolower($attr) != 'same_height_as' AND strtolower($attr) != 'onload' ) { // remove some attributes
+		if ( strtolower($attr) != 'same_height_as' AND strtolower($attr) != 'onload'
+			AND strtolower($attr) != 'onpageshow' AND strtolower($attr) != 'onclick') { // remove some attributes
 			if ( $value != '' ) { // adding all attributes
 				$html .= ' ' . esc_attr( $attr ) . '="' . esc_attr( $value ) . '"';
 			} else { // adding empty attributes

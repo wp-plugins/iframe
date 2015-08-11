@@ -4,7 +4,7 @@ Donate link: http://web-profile.com.ua/donate/
 Tags: iframe, embed, youtube, vimeo, google-map, google-maps
 Requires at least: 3.0
 Tested up to: 4.4
-Stable tag: 4.0
+Stable tag: 4.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -59,10 +59,13 @@ If you need to embed content from YouTube, Vimeo, SlideShare, SoundCloud, Twitte
 
 == Changelog ==
 
+= 4.1 - 2015-08-11 =
+* removed onpageshow and onclick params. Reason: XSS vulnerability (thanks to dxw.com).
+
 = 4.0 - 2015-08-09 =
-* removed get_params_from_url param. Reason: XSS vulnerability (thanks to [dxw.com](http://dxw.com/) ).
+* removed get_params_from_url param. Reason: XSS vulnerability (thanks to dxw.com).
 If you still need this feature you can [download iframe ver 3.0[(https://wordpress.org/plugins/iframe/developers/) and stick to it but keep in mind of XSS vulnerability.
-* removed onload param. Reason: XSS vulnerability (thanks to [dxw.com](http://dxw.com/) ).
+* removed onload param. Reason: XSS vulnerability (thanks to dxw.com).
 * escaping attributes
 
 = 3.0 - 2015-01-25 =
