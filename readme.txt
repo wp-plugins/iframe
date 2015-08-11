@@ -60,9 +60,9 @@ If you need to embed content from YouTube, Vimeo, SlideShare, SoundCloud, Twitte
 == Changelog ==
 
 = 4.0 - 2015-08-09 =
-* removed get_params_from_url param. Reason: possible XSS vulnerability (thanks to [dxw.com](http://dxw.com/) ).
-If you still need this feature you can [download iframe ver 3.0[(https://wordpress.org/plugins/iframe/developers/) and stick to it but keep in mind of possible XSS vulnerability.
-* removed onload param. Reason: possible XSS vulnerability (thanks to [dxw.com](http://dxw.com/) ).
+* removed get_params_from_url param. Reason: XSS vulnerability (thanks to [dxw.com](http://dxw.com/) ).
+If you still need this feature you can [download iframe ver 3.0[(https://wordpress.org/plugins/iframe/developers/) and stick to it but keep in mind of XSS vulnerability.
+* removed onload param. Reason: XSS vulnerability (thanks to [dxw.com](http://dxw.com/) ).
 * escaping attributes
 
 = 3.0 - 2015-01-25 =
